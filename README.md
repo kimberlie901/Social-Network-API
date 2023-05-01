@@ -2,6 +2,8 @@
 
 ## Description 
 
+This is a social network back-end NoSQL API which will be impleneted in a website where users will be able to share their thoughts, react to friends' thoughts, and create a friend list. 
+
 ## Table of Contents
 - [User Story](#user-story)
 - [Usage](#usage)
