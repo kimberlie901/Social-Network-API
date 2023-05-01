@@ -10,3 +10,31 @@
  * THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
  */
 
+// Dependencies
+const express = require('express');
+const mongoose = require('mongoose');
+
+
+// variables for express server
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(require('./routes'));
+
+
+// Connect to MongoDB/Mongoose
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {
+    useFindAndModify: false,
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+// Log mongo queries
+mongoose.set('debug', true);
+
+// Start server
+app.listen(PORT, () => console.log(`App listing on localhost:${PORT}`));
