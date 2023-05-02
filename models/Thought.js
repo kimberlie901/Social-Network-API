@@ -5,6 +5,7 @@ const { schema, model, types} = require("mongoose");
 const dateFormat = require("../utils/dateFormat");  
 
 // MAKE SURE TO GO BACK AND ADD THE DATE FORMAT TO UTILS FOLDER
+// also look into using Moment.js for date formatting
 
 
 // reactions schema 
