@@ -1,5 +1,5 @@
 // require mongoose 
-const { schema, model, types} = require("mongoose");
+const { Schema, model, Types} = require("mongoose");
 
 // import date format
 const dateFormat = require("../utils/dateFormat");  
@@ -9,11 +9,11 @@ const dateFormat = require("../utils/dateFormat");
 
 
 // reactions schema 
-const reactionSchema = new schema({
+const reactionSchema = new Schema({
     // set custom id to avoid confusion with parent thought _id
     reactionId: {
-        type: schema.Types.ObjectId,
-        default: () => new schema.Types.ObjectId()
+        type: Schema.Types.ObjectId,
+        default: () => new Schema.Types.ObjectId()
     },
     reactionBody: {
         type: String,
@@ -41,7 +41,7 @@ const reactionSchema = new schema({
 
 
 // thought schema
-const thoughtSchema = new schema({
+const thoughtSchema = new Schema({
     thoughtText: {
         type: String,
         required: true,
