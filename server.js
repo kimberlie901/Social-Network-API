@@ -33,8 +33,10 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-
     useUnifiedTopology: true
 });
 
+
 // Log mongo queries
 mongoose.set('debug', true);
+
 
 // Start server
 app.listen(PORT, () => console.log(`App listing on localhost:${PORT}`));

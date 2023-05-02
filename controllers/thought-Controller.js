@@ -133,4 +133,4 @@ const thoughtController = {
 
 
 // export thought controller
-module.exports = thoughtController;
+module.exports = thoughtController; 
