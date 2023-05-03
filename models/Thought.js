@@ -1,12 +1,9 @@
 // require mongoose 
 const { Schema, model, Types} = require("mongoose");
 
-// import date format (either this or use Moment.js)
-// const dateFormat = require("../utils/dateFormat");
-const moment = require("moment");  
 
-// MAKE SURE TO GO BACK AND ADD THE DATE FORMAT TO UTILS FOLDER
-// also look into using Moment.js for date formatting
+// import date format (use Moment.js)
+const moment = require("moment");  
 
 
 // reactions schema 
@@ -32,7 +29,7 @@ const reactionSchema = new Schema({
         // use getter method to format timestamp on query
         get: createdAtVal => moment(createdAtVal).format("MMM DD, YYYY [at] hh:mm a")
     }
-    },
+},
     {
         toJSON: {
             getters: true
@@ -71,6 +68,7 @@ const thoughtSchema = new Schema({
         id: false
     }
 );
+
 
 // total amount of reactions
 thoughtSchema.virtual("reactionCount").get(function() {

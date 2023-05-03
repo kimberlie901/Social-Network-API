@@ -12,7 +12,7 @@ const thoughtController = {
                 console.log(thought._id)
                  User.findOneAndUpdate(
                     { _id : body.username },
-                    { $push: { thoughts: thought_id } },
+                    { $push: { thoughts: Thought_id } },
                     // return updated user
                     { new: true }
                 );

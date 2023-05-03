@@ -1,9 +1,7 @@
 // require user models
-
 const { User } = require('../models');
 
 // user controller
-
 
 // create user
 const userController = {
@@ -12,6 +10,7 @@ const userController = {
             .then(userData => res.json(userData))
             .catch(err => res.json(err));
     },
+
 
     // get all users
     getAllUsers(req, res) {
@@ -31,6 +30,7 @@ const userController = {
                 res.sendStatus(400);
             });
     },
+
 
     // get user by id and populate thought and friend data
     getUserById({ params }, res) {
@@ -57,6 +57,7 @@ const userController = {
             });
     },
 
+
     // update user by id
     updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
@@ -70,6 +71,7 @@ const userController = {
             .catch(err => res.json(err));
     },
 
+
     // delete user by id
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.id })
@@ -82,6 +84,7 @@ const userController = {
             })
             .catch(err => res.json(err));
     },
+
 
     // add friend to user's friend list
     addFriend({ params }, res) {
@@ -100,6 +103,7 @@ const userController = {
             .catch(err => res.json(err));
     },
 
+    
     // delete friend from user's friend list
     deleteFriend({ params }, res) {
         User.findOneAndUpdate(
