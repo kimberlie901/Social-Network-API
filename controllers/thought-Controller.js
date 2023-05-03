@@ -11,8 +11,8 @@ const thoughtController = {
             .then((thought) => {
                 console.log(thought._id)
                  User.findOneAndUpdate(
-                    { _id : body.username },
-                    { $push: { thoughts: Thought_id } },
+                    { username : body.username },
+                    { $push: { thoughts: thought_id } },
                     // return updated user
                     { new: true }
                 );
