@@ -1,5 +1,5 @@
 // require thought models
-const { Thought } = require('../models');
+const { Thought, User } = require('../models');
 
 
 // Thought controller
@@ -8,10 +8,11 @@ const thoughtController = {
     // create thoughts and push the thought to user's thoughts array
     createThought({ params, body }, res) {
         Thought.create(body)
-            .then(({ _id }) => {
-                return User.findOneAndUpdate(
-                    { _id: params.userId },
-                    { $push: { thoughts: _id } },
+            .then((thought) => {
+                console.log(thought._id)
+                 User.findOneAndUpdate(
+                    { _id : body.username },
+                    { $push: { thoughts: thought_id } },
                     // return updated user
                     { new: true }
                 );
