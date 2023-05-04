@@ -9,7 +9,8 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 - [Usage](#usage)
 - [Installation](#installation)
 - [Technologies](#technologies)
-- [Demo](#demo)
+- [Demo Video](#demo)
+- [Demo Images](#images)
 - [Websites](#websites)
 - [Author](#author)
 - [License](#license)
@@ -36,8 +37,12 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 - Express.js
 - MonogoDB
 - Mongoose 
+- Moment.js
 
 ### Demo
+
+### Images
+
 
 ### Websites
 
