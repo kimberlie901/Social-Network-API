@@ -10,9 +10,9 @@ const thoughtController = {
         Thought.create(body)
             .then((thought) => {
                 console.log(thought._id)
-                 User.findOneAndUpdate(
+                 return User.findOneAndUpdate(
                     { username : body.username },
-                    { $push: { thoughts: thought_id } },
+                    { $push: { thoughts: thought._id } },
                     // return updated user
                     { new: true }
                 );
