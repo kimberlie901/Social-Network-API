@@ -119,7 +119,7 @@ const thoughtController = {
             { _id: params.thoughtId },
             { $pull: { reactions: { reactionId: params.reactionId } } },
             // return updated thought
-            { new: true }
+            { runValidators: true, new: true }
         )
             .then(thoughtData => {
                 if (!thoughtData) {
