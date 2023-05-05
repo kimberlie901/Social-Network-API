@@ -49,11 +49,24 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 ![Get User](/Assets/images/get-user.png)
 ![Update User](/Assets/images/update-user.png)
 
+- Friend Images
+![Add Friend](/Assets/images/add-friend.png)
+![Delete Friend](/Assets/images/delete-friend.png)
+
+- Thought Images
+![Create Thought](/Assets/images/create-Thought.png)
+![Delete Thought](/Assets/images/delete-Thought.png)
+![Get Thought by ID](/Assets/images/get-thought.png)
+![Update Thought](/Assets/images/update-Thought.png)
+
+- Reaction Images
+![Add Reaction](/Assets/images/Add-reaction.png)
+![Delete Reaction](/Assets/images/delete-reaction.png)
 
 ### Websites
 
 - [Social Network API - Users Demo](https://drive.google.com/file/d/1lagLlG9S2jhQoY03E16RREnOqRkUr1cy/view)
-- []()
+- [Social Network API - ]()
 
 ### Author
 
