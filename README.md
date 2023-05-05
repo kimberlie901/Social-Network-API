@@ -43,6 +43,12 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 
 ### Images
 
+- User Images
+![Delete User](/Assets/images/delete-user.png)
+![Get User by ID](/Assets/images/get-user-by-id.png)
+![Get User](/Assets/images/get-user.png)
+![Update User](/Assets/images/update-user.png)
+
 
 ### Websites
 
