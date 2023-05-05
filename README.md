@@ -6,7 +6,6 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 
 ## Table of Contents
 - [User Story](#user-story)
-- [Usage](#usage)
 - [Installation](#installation)
 - [Technologies](#technologies)
 - [Demo Video](#demo)
@@ -14,8 +13,6 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 - [Websites](#websites)
 - [Author](#author)
 - [License](#license)
-- []()
-- []()
 
 ### User Story
 
@@ -23,11 +20,12 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 - I WANT an API for my social network that uses a NoSQL database
 - SO THAT my website can handle large amounts of unstructured data 
 
-### Usage
-
 ### Installation
 
 1. Clone or download the repository to your own local machine and run it from your command line on Visual Studio Code
+2. `npm i` to download dependencies
+3. When you're ready to run application `npm start`
+4. Test Routes on Insomnia 
 
 ### Technologies
 
@@ -41,7 +39,10 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 
 ### Demo
 
-### Images
+- [Social Network API - Users Demo](https://drive.google.com/file/d/1lagLlG9S2jhQoY03E16RREnOqRkUr1cy/view)
+- [Social Network API - Friend/Thought/Reaction Demo](https://drive.google.com/file/d/1ek4GKMmc_3IH4-2voK0km5KXjhz_h0Dt/view)
+
+### Demo Images
 
 - User Images
 ![Delete User](/Assets/images/delete-user.png)
@@ -63,10 +64,10 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 ![Add Reaction](/Assets/images/Add-reaction.png)
 ![Delete Reaction](/Assets/images/delete-reaction.png)
 
+
 ### Websites
 
-- [Social Network API - Users Demo](https://drive.google.com/file/d/1lagLlG9S2jhQoY03E16RREnOqRkUr1cy/view)
-- [Social Network API - Friend/Thought/Reaction Demo](https://drive.google.com/file/d/1ek4GKMmc_3IH4-2voK0km5KXjhz_h0Dt/view)
+- [GitHub Page](https://github.com/kimberlie901/Social-Network-API)
 
 ### Author
 
