@@ -9,7 +9,7 @@ This is a social network back-end NoSQL API which will be impleneted in a websit
 - [Installation](#installation)
 - [Technologies](#technologies)
 - [Demo Video](#demo)
-- [Demo Images](#images)
+- [Demo Images](#demo-images)
 - [Websites](#websites)
 - [Author](#author)
 - [License](#license)
